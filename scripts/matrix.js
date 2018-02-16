@@ -3,7 +3,7 @@
 var canvas = document.getElementById("canvas");
 
 canvas.height = window.screen.height;
-canvas.width = window.screen.width - 17;
+canvas.width = document.body.clientWidth;
 
 // una entrada en el array por columna de texto
 //cada valor represnta la posición y actual de la columna.  (en canvas 0 es en la parte superior y los valores positivos de y van disminuyendo)
