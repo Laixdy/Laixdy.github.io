@@ -2,6 +2,7 @@
 <html>
     <head>
     	<meta charset="utf-8">
+    	<meta name="google-site-verification" content="sXOn1b9KHLnfFJfBe6WWQGEYubBQQx9A3-TUSrEcK2I" />
     	<link rel="stylesheet" type="text/css" href="styles/styles.css">
     	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <title>Laixdy</title>
@@ -11,8 +12,8 @@
         <link rel="stylesheet" href="libs/baguetteBox/baguetteBox.min.css">
 		<script src="libs/baguetteBox/baguetteBox.min.js" async></script>
 		<script type="text/javascript" src="libs/typewriter/typewriter.js"></script>
-		
-		
+		<link rel="stylesheet" type="text/css" href="libs/aos/aos.css">		
+
         <script>
         	function danger(){   	   		
             		gemidoscroll(800);        		
@@ -33,12 +34,14 @@
 		<canvas id="canvas"></canvas>
 		
 
-		<div class="galeria1">
-			
+		<div class="galeria1" >
+			<a href="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Code-1076536.jpg/800px-Code-1076536.jpg" title="Codigo">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Code-1076536.jpg/800px-Code-1076536.jpg" style="margin-top: 1000px; margin-left: 50px" data-aos="flip-right">
+			</a>
 		</div>
 
-
-        <div class="elevator" style="margin-top: 1000px">
+		<!-- Svg Elevador  -->
+        <div class="elevator" style="margin-top: 10000px">
             <svg class="sweet-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" height="100px" width="100px">
             	<path d="M70,47.5H30c-1.4,0-2.5,1.1-2.5,2.5v40c0,1.4,1.1,2.5,2.5,2.5h40c1.4,0,2.5-1.1,2.5-2.5V50C72.5,48.6,71.4,47.5,70,47.5z   M47.5,87.5h-5v-25h5V87.5z M57.5,87.5h-5v-25h5V87.5z M67.5,87.5h-5V60c0-1.4-1.1-2.5-2.5-2.5H40c-1.4,0-2.5,1.1-2.5,2.5v27.5h-5  v-35h35V87.5z"/>
             	<path d="M50,42.5c1.4,0,2.5-1.1,2.5-2.5V16l5.7,5.7c0.5,0.5,1.1,0.7,1.8,0.7s1.3-0.2,1.8-0.7c1-1,1-2.6,0-3.5l-10-10  c-1-1-2.6-1-3.5,0l-10,10c-1,1-1,2.6,0,3.5c1,1,2.6,1,3.5,0l5.7-5.7v24C47.5,41.4,48.6,42.5,50,42.5z"/>
@@ -46,11 +49,13 @@
             <p>Volver Arriba</p>
         </div>
 
+		<!-- Galeria  -->
 		<script type="text/javascript">
 			window.onload = function() {
     			baguetteBox.run('.galeria1');
     		}
 		</script>
+		<!-- Elevador Scroll  -->
         <script>
             // Simple elevator usage.
             var elementButton = document.querySelector('.elevator');
@@ -60,9 +65,12 @@
                 endAudio:  'libs/ElevatorJs/music/ding.mp3'
             });
         </script>
+		<!-- Matrix Fondo  -->
         <script type="text/javascript" src="scripts/matrix.js"></script>
+		<!-- anime.js  -->
         <script type="text/javascript" src="libs/animejs/anime.min.js"></script>
 		<script type="text/javascript" src="scripts/about.js"></script>
+		<!-- TypeWriter  -->
 		<script type="text/javascript">
 			var app = document.getElementById('about');
 
@@ -72,7 +80,7 @@
 
 
 			typewriter.typeString('Quien Soy:')
-    		.pauseFor(4500)
+    		.pauseFor(5000)
     		.typeString(' Soy Un Programador')
     		.pauseFor(2500)
     		.deleteChars(18)
@@ -80,5 +88,8 @@
     		.pauseFor(2500)
     		.start();
 		</script>
+		<!-- Aos  -->
+		<script type="text/javascript" src="libs/aos/aos.js"></script>
+		<script type="text/javascript">AOS.init();</script>
     </body>
 </html>
